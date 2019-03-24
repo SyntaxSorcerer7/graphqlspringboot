@@ -1,3 +1,5 @@
+package de.jfrdev.graphqldemo;
+
 public class Link {
     private final String url;
     private final String description;
