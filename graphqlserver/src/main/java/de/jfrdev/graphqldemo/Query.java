@@ -1,6 +1,7 @@
 package de.jfrdev.graphqldemo;
 
 import com.coxautodev.graphql.tools.GraphQLRootResolver;
+import de.jfrdev.graphqldemo.modle.Link;
 
 import java.util.List;
 

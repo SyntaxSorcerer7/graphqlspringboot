@@ -1,6 +1,12 @@
 type Link {
   url: String!
   description: String!
+  linkInfo: LinkInfo!
+}
+
+type LinkInfo {
+    creator: String!
+    creationDate: String!
 }
 
 type Query {

@@ -1,12 +1,14 @@
-package de.jfrdev.graphqldemo;
+package de.jfrdev.graphqldemo.modle;
 
 public class Link {
     private final String url;
     private final String description;
+    private final LinkInfo linkInfo;
 
-    public Link(String url, String description) {
+    public Link(String url, String description, LinkInfo info) {
         this.url = url;
         this.description = description;
+        linkInfo = info;
     }
 
     public String getUrl() {
@@ -15,5 +17,9 @@ public class Link {
 
     public String getDescription() {
         return description;
+    }
+
+    public LinkInfo getLinkInfo() {
+        return linkInfo;
     }
 }

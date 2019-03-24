@@ -1,6 +1,10 @@
 package de.jfrdev.graphqldemo;
 
+import de.jfrdev.graphqldemo.modle.Link;
+import de.jfrdev.graphqldemo.modle.LinkInfo;
+
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 public class LinkRepository {
@@ -10,8 +14,10 @@ public class LinkRepository {
     public LinkRepository() {
         links = new ArrayList<>();
         //add some links to start off with
-        links.add(new Link("http://howtographql.com", "Your favorite GraphQL page"));
-        links.add(new Link("http://graphql.org/learn/", "The official docks"));
+        LinkInfo info = new LinkInfo(new Date(), "Bear");
+        LinkInfo secondInfo = new LinkInfo(new Date(), "Mouse");
+        links.add(new Link("http://howtographql.com", "Your favorite GraphQL page", info));
+        links.add(new Link("http://graphql.org/learn/", "The official docks", secondInfo));
     }
 
     public List<Link> getAllLinks() {
