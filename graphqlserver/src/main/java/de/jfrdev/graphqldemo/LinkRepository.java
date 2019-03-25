@@ -2,11 +2,13 @@ package de.jfrdev.graphqldemo;
 
 import de.jfrdev.graphqldemo.modle.Link;
 import de.jfrdev.graphqldemo.modle.LinkInfo;
+import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
+@Component
 public class LinkRepository {
 
     private final List<Link> links;

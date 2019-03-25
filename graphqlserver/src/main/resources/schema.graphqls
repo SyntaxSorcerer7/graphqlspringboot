@@ -1,12 +1,15 @@
 type Link {
   url: String!
   description: String!
-  linkInfo: LinkInfo!
 }
 
 type LinkInfo {
     creator: String!
     creationDate: String!
+}
+
+type Mutation {
+  createLink(url: String!, description: String!): Link
 }
 
 type Query {
@@ -15,4 +18,5 @@ type Query {
 
 schema {
   query: Query
+  mutation: Mutation
 }
